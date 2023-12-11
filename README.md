@@ -1,7 +1,7 @@
 # SI507_final
 Backup for SI507 final project.
 ## Running the code
-1. make sure you have python installed
+1. Make sure you have python installed
 2. Install the required Python packages using 'pip install -r requirements.txt'.
 3. Run the Flask application by executing python file_name.py in your terminal.
 API can be accessed without keys. If you want to increase rate, you can apply for an API key referring to https://docs.pokemontcg.io/getting-started/authentication/#:~:text=Authentication%20to%20the%2>

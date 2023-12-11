@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Types</title>
+    <!-- Add any necessary CSS or meta tags here -->
+</head>
+<body>
+    <h1>Choose a Pokemon Type</h1>
+    <form action="/cards" method="POST">
+        <label for="type-select">Select a Pokemon Type:</label>
+        <select name="selected_type" id="type-select">
+            {% for type in pokemon_types %}
+                <option value="{{ type }}">{{ type }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Additional content can go here -->
+</body>
+</html>

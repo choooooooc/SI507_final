@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Price Information</title>
+</head>
+<body>
+    <div>
+        <h1>Price Chart for the Card</h1>
+        <p>
+            <a href="{{ url }}">View Chart price for the card on PriceCharting</a>
+        </p>
+    </div>
+
+    <div>
+        <h1>Cards for Sale</h1>
+        <ul>
+{% if cards_for_sale %}  
+            {% for card_sale in cards_for_sale %}
+                <li>
+                    <strong>Date:</strong> {{ card_sale.date }}<br>
+                    <strong>Price:</strong> {{ card_sale.price }}<br>
+                    <strong>Purchase URL:</strong> <a href="{{ card_sale.url }}" target="_blank">{{ card_sale.url }}</a><br>
+<a> </a>
+                </li>
+            {% endfor %}
+{% else %}
+                <li>No cards for sale.</li>
+{% endif %}
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- card_info.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Information</title>
+</head>
+<body>
+    <h1>Card Information</h1>
+    <div>
+        <h2>{{ card_info['Name'] }} #{{ card_info['Number'] }}</h2>
+<img src="{{ card_info['Img_url'] }}" alt="{{ card_info['Name'] }}" style="max-width: 100%; height: auto;">
+        <p><strong>HP</strong>: {{ card_info['HP'] }}</p>
+	<p><strong>Set</strong>: {{ card_info['Set'] }} </p>
+<p><strong>Series</strong>: {{ card_info['Series'] }}</p>
+	<p><strong>Realease Date</strong>: {{ card_info['Release'] }}</p>
+	<p><strong>Rarity</strong>: {{ card_info['Rarity'] }}</p>
+<p></p>
+<h2> Want to purchase the card?</h2>
+<p><a href="/price_info/{{ card_info['ID'] }}">View Price Information and Purchase Links</a> <!-- Link to card price chart --></p>
+        <!-- Display other card details here -->
+    </div>
+</body>
+</html>

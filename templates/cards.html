@@ -1,0 +1,21 @@
+<!-- cards.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards Filtered by Type</title>
+</head>
+<body>
+    <h1>Cards filtered by selected type:</h1>
+    <div>
+        {% for card in cards %}
+            <div>
+                <p><strong>{{ card['Name'] }} #{{ card['Number'] }}</strong>  (HP: {{ card['HP'] }})</p>
+<p><a href="/card_details/{{ card['ID'] }}">View Details</a> <!-- Link to card details --></p>
+
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

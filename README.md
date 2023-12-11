@@ -8,6 +8,7 @@ API can be accessed without keys. If you want to increase rate, you can apply fo
 ## Interacting with the program
 Once the Flask application is running, you can click on the link and:
 1. Access the home page to filter Pokémon cards by type.
+  ![image](/image/home_page.png)
 2. Explore the cards displayed in descending order of HP.
 3. Click on the 'View Details' link below a card to view its details, including an image and other information.
 4. Check the price information and available purchase URLs for a specific card on the detail page.
